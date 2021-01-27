@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - 8000:80
+    volumes:
+      - /Users/admin/Documents/tools/docker/nginx/conf.d/:/etc/nginx/conf.d
+      - /Users/admin/Documents/tools/docker/nginx/www/:/www
+    

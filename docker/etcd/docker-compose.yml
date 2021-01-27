@@ -5,18 +5,25 @@ networks:
     driver: bridge
 
 services:
-  etcd:
-    image: bitnami/etcd:latest
-    container_name: "etcd"
-    restart: always
-    environment:
-      - ALLOW_NONE_AUTHENTICATION=yes
-      - ETCD_ADVERTISE_CLIENT_URLS=http://etcd:2379
-    ports:
-      - 2379:2379
-      - 2380:2380
-    networks:
-      - etcd
+#  etcd:
+#    image: bitnami/etcd:latest
+#    container_name: "etcd"
+#    restart: always
+#    environment:
+#      - ALLOW_NONE_AUTHENTICATION=yes
+#      - ETCD_NAME=etcd
+#      - ETCD_DATA_DIR=/data
+#      - ETCD_INITIAL_ADVERTISE_PEER_URLS=http://etcd:2380
+#      - ETCD_LISTEN_PEER_URLS=http://0.0.0.0:2380
+#      - ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379
+#      - ETCD_ADVERTISE_CLIENT_URLS=http://etcd:2379
+#    ports:
+#      - 2379:2379
+#      - 2380:2380
+#    volumes:
+#      - /Users/admin/Documents/tools/docker/etcd/data:/data
+#    networks:
+#      - etcd
       
   etcdkeeper:
     image: evildecay/etcdkeeper:latest
@@ -25,7 +32,5 @@ services:
       HOST: "0.0.0.0"
     ports:
       - 12000:8080
-    depends_on:
-      - etcd
     networks:
       - etcd
