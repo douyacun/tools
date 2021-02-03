@@ -26,7 +26,11 @@ services:
       timeout: 5s
       retries: 5
     volumes:
+<<<<<<< HEAD
       - /Users/admin/Documents/tools/docker/kong/postgres:/var/lib/postgresql/data
+=======
+      - /Users/liuning/Documents/github/tools/docker/kong/postgres:/var/lib/postgresql/data
+>>>>>>> 243d62b7ce7cc29d815a05f63673c2f41796eb60
 
   #######################################
   # Kong database migration

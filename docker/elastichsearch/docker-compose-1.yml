@@ -1,0 +1,28 @@
+version: '3'
+
+networks:
+  es:
+    driver: bridge
+
+services:
+  elasticsearch:
+    image: registry.cn-hangzhou.aliyuncs.com/douyacun/elasticsearch:latest
+    container_name: es75
+    environment:
+      - "cluster.name=douyacun-cluster"
+      - "discovery.type=zen"
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "node.master=true"
+      - "node.name=node-1"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - 9201:9200
+      - 9301:9300
+    volumes:
+      - "/data/elasticsearch/data:/usr/share/elasticsearch/data"
+      - "/data/elasticsearch/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
+    networks:
+      - es

@@ -4006,3 +4006,218 @@
 2021-01-26 18:47:02.667641 I | mvcc: finished scheduled compaction at 6443 (took 1.738913ms)
 2021-01-26 19:36:19.542762 N | pkg/osutil: received terminated signal, shutting down...
 2021-01-26 19:36:19.549569 I | etcdserver: skipped leadership transfer for single member cluster
+2021-01-29 14:06:28.740927 I | etcdmain: etcd Version: 3.3.25
+2021-01-29 14:06:28.745709 I | etcdmain: Git SHA: 2c834459e
+2021-01-29 14:06:28.745786 I | etcdmain: Go Version: go1.12.17
+2021-01-29 14:06:28.745813 I | etcdmain: Go OS/Arch: darwin/amd64
+2021-01-29 14:06:28.745844 I | etcdmain: setting maximum number of CPUs to 4, total number of available CPUs is 4
+2021-01-29 14:06:28.745888 N | etcdmain: failed to detect default host (default host not supported on darwin_amd64)
+2021-01-29 14:06:28.746160 N | etcdmain: the server is already initialized as member before, starting as etcd member...
+2021-01-29 14:06:28.747043 I | embed: listening for peers on http://localhost:2380
+2021-01-29 14:06:28.747288 I | embed: listening for client requests on 0.0.0.0:2379
+2021-01-29 14:06:28.751570 I | etcdserver: name = default
+2021-01-29 14:06:28.751632 I | etcdserver: data dir = /Users/admin/Documents/tools/docker/etcd/data
+2021-01-29 14:06:28.751658 I | etcdserver: member dir = /Users/admin/Documents/tools/docker/etcd/data/member
+2021-01-29 14:06:28.751676 I | etcdserver: heartbeat = 100ms
+2021-01-29 14:06:28.751697 I | etcdserver: election = 1000ms
+2021-01-29 14:06:28.751718 I | etcdserver: snapshot count = 100000
+2021-01-29 14:06:28.751751 I | etcdserver: advertise client URLs = http://0.0.0.0:2379
+2021-01-29 14:06:28.751780 I | etcdserver: initial advertise peer URLs = http://localhost:2380
+2021-01-29 14:06:28.751810 I | etcdserver: initial cluster = default=http://localhost:2380
+2021-01-29 14:06:28.999122 I | etcdserver: starting member 8e9e05c52164694d in cluster cdf818194e3a8c32
+2021-01-29 14:06:28.999345 I | raft: 8e9e05c52164694d became follower at term 0
+2021-01-29 14:06:29.004014 I | raft: newRaft 8e9e05c52164694d [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+2021-01-29 14:06:29.004084 I | raft: 8e9e05c52164694d became follower at term 1
+2021-01-29 14:06:29.041899 W | auth: simple token is not cryptographically signed
+2021-01-29 14:06:29.120916 I | mvcc: restore compact to 6443
+2021-01-29 14:06:29.163286 I | etcdserver: starting server... [version: 3.3.25, cluster version: to_be_decided]
+2021-01-29 14:06:29.163643 I | etcdserver: 8e9e05c52164694d as single-node; fast-forwarding 9 ticks (election ticks 10)
+2021-01-29 14:06:29.163982 E | etcdserver: cannot monitor file descriptor usage (cannot get FDUsage on darwin)
+2021-01-29 14:06:29.164416 I | etcdserver/membership: added member 8e9e05c52164694d [http://localhost:2380] to cluster cdf818194e3a8c32
+2021-01-29 14:06:29.305381 I | raft: 8e9e05c52164694d is starting a new election at term 1
+2021-01-29 14:06:29.305554 I | raft: 8e9e05c52164694d became candidate at term 2
+2021-01-29 14:06:29.305767 I | raft: 8e9e05c52164694d received MsgVoteResp from 8e9e05c52164694d at term 2
+2021-01-29 14:06:29.305833 I | raft: 8e9e05c52164694d became leader at term 2
+2021-01-29 14:06:29.305872 I | raft: raft.node: 8e9e05c52164694d elected leader 8e9e05c52164694d at term 2
+2021-01-29 14:06:29.306191 I | etcdserver: setting up the initial cluster version to 3.3
+2021-01-29 14:06:29.323278 N | etcdserver/membership: set the initial cluster version to 3.3
+2021-01-29 14:06:29.324420 I | embed: ready to serve client requests
+2021-01-29 14:06:29.324541 I | etcdserver: published {Name:default ClientURLs:[http://0.0.0.0:2379]} to cluster cdf818194e3a8c32
+2021-01-29 14:06:29.324714 I | etcdserver/api: enabled capabilities for version 3.3
+2021-01-29 14:06:29.325886 N | embed: serving insecure client requests on [::]:2379, this is strongly discouraged!
+2021-01-29 14:26:34.786911 I | etcdmain: etcd Version: 3.3.25
+2021-01-29 14:26:34.788904 I | etcdmain: Git SHA: 2c834459e
+2021-01-29 14:26:34.788935 I | etcdmain: Go Version: go1.12.17
+2021-01-29 14:26:34.788958 I | etcdmain: Go OS/Arch: darwin/amd64
+2021-01-29 14:26:34.788979 I | etcdmain: setting maximum number of CPUs to 4, total number of available CPUs is 4
+2021-01-29 14:26:34.789006 N | etcdmain: failed to detect default host (default host not supported on darwin_amd64)
+2021-01-29 14:26:34.789200 N | etcdmain: the server is already initialized as member before, starting as etcd member...
+2021-01-29 14:26:34.789883 I | embed: listening for peers on http://localhost:2380
+2021-01-29 14:26:34.790033 I | embed: listening for client requests on 0.0.0.0:2379
+2021-01-29 14:26:34.821796 I | etcdserver: name = default
+2021-01-29 14:26:34.821845 I | etcdserver: data dir = /Users/admin/Documents/tools/docker/etcd/data
+2021-01-29 14:26:34.821868 I | etcdserver: member dir = /Users/admin/Documents/tools/docker/etcd/data/member
+2021-01-29 14:26:34.821890 I | etcdserver: heartbeat = 100ms
+2021-01-29 14:26:34.821906 I | etcdserver: election = 1000ms
+2021-01-29 14:26:34.821920 I | etcdserver: snapshot count = 100000
+2021-01-29 14:26:34.821945 I | etcdserver: advertise client URLs = http://0.0.0.0:2379
+2021-01-29 14:26:34.828388 I | etcdserver: restarting member 8e9e05c52164694d in cluster cdf818194e3a8c32 at commit index 13
+2021-01-29 14:26:34.828487 I | raft: 8e9e05c52164694d became follower at term 2
+2021-01-29 14:26:34.828555 I | raft: newRaft 8e9e05c52164694d [peers: [], term: 2, commit: 13, applied: 0, lastindex: 13, lastterm: 2]
+2021-01-29 14:26:34.859484 W | auth: simple token is not cryptographically signed
+2021-01-29 14:26:34.927394 I | mvcc: restore compact to 6443
+2021-01-29 14:26:34.958067 I | etcdserver: starting server... [version: 3.3.25, cluster version: to_be_decided]
+2021-01-29 14:26:34.959450 I | etcdserver/membership: added member 8e9e05c52164694d [http://localhost:2380] to cluster cdf818194e3a8c32
+2021-01-29 14:26:34.959856 N | etcdserver/membership: set the initial cluster version to 3.3
+2021-01-29 14:26:34.959976 E | etcdserver: cannot monitor file descriptor usage (cannot get FDUsage on darwin)
+2021-01-29 14:26:34.960066 I | etcdserver/api: enabled capabilities for version 3.3
+2021-01-29 14:26:36.530557 I | raft: 8e9e05c52164694d is starting a new election at term 2
+2021-01-29 14:26:36.530665 I | raft: 8e9e05c52164694d became candidate at term 3
+2021-01-29 14:26:36.530719 I | raft: 8e9e05c52164694d received MsgVoteResp from 8e9e05c52164694d at term 3
+2021-01-29 14:26:36.530756 I | raft: 8e9e05c52164694d became leader at term 3
+2021-01-29 14:26:36.530787 I | raft: raft.node: 8e9e05c52164694d elected leader 8e9e05c52164694d at term 3
+2021-01-29 14:26:36.531221 I | etcdserver: published {Name:default ClientURLs:[http://0.0.0.0:2379]} to cluster cdf818194e3a8c32
+2021-01-29 14:26:36.531312 I | embed: ready to serve client requests
+2021-01-29 14:26:36.532477 N | embed: serving insecure client requests on [::]:2379, this is strongly discouraged!
+2021-01-29 14:33:44.848180 I | etcdmain: etcd Version: 3.3.25
+2021-01-29 14:33:44.848490 I | etcdmain: Git SHA: 2c834459e
+2021-01-29 14:33:44.848515 I | etcdmain: Go Version: go1.12.17
+2021-01-29 14:33:44.848586 I | etcdmain: Go OS/Arch: darwin/amd64
+2021-01-29 14:33:44.848640 I | etcdmain: setting maximum number of CPUs to 4, total number of available CPUs is 4
+2021-01-29 14:33:44.848697 N | etcdmain: failed to detect default host (default host not supported on darwin_amd64)
+2021-01-29 14:33:44.849820 I | embed: listening for peers on http://localhost:2380
+2021-01-29 14:33:44.849946 I | embed: listening for client requests on 0.0.0.0:2379
+2021-01-29 14:33:44.895548 I | etcdserver: name = default
+2021-01-29 14:33:44.895803 I | etcdserver: data dir = /Users/admin/Documents/tools/docker/etcd/data
+2021-01-29 14:33:44.895838 I | etcdserver: member dir = /Users/admin/Documents/tools/docker/etcd/data/member
+2021-01-29 14:33:44.895853 I | etcdserver: heartbeat = 100ms
+2021-01-29 14:33:44.895865 I | etcdserver: election = 1000ms
+2021-01-29 14:33:44.895876 I | etcdserver: snapshot count = 100000
+2021-01-29 14:33:44.895898 I | etcdserver: advertise client URLs = http://0.0.0.0:2379
+2021-01-29 14:33:44.895913 I | etcdserver: initial advertise peer URLs = http://localhost:2380
+2021-01-29 14:33:44.895930 I | etcdserver: initial cluster = default=http://localhost:2380
+2021-01-29 14:33:45.143102 I | etcdserver: starting member 8e9e05c52164694d in cluster cdf818194e3a8c32
+2021-01-29 14:33:45.145789 I | raft: 8e9e05c52164694d became follower at term 0
+2021-01-29 14:33:45.145881 I | raft: newRaft 8e9e05c52164694d [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+2021-01-29 14:33:45.146062 I | raft: 8e9e05c52164694d became follower at term 1
+2021-01-29 14:33:45.197267 W | auth: simple token is not cryptographically signed
+2021-01-29 14:33:45.312936 I | etcdserver: starting server... [version: 3.3.25, cluster version: to_be_decided]
+2021-01-29 14:33:45.313614 I | etcdserver: 8e9e05c52164694d as single-node; fast-forwarding 9 ticks (election ticks 10)
+2021-01-29 14:33:45.314536 I | etcdserver/membership: added member 8e9e05c52164694d [http://localhost:2380] to cluster cdf818194e3a8c32
+2021-01-29 14:33:45.315382 E | etcdserver: cannot monitor file descriptor usage (cannot get FDUsage on darwin)
+2021-01-29 14:33:45.650607 I | raft: 8e9e05c52164694d is starting a new election at term 1
+2021-01-29 14:33:45.650814 I | raft: 8e9e05c52164694d became candidate at term 2
+2021-01-29 14:33:45.650906 I | raft: 8e9e05c52164694d received MsgVoteResp from 8e9e05c52164694d at term 2
+2021-01-29 14:33:45.650986 I | raft: 8e9e05c52164694d became leader at term 2
+2021-01-29 14:33:45.651018 I | raft: raft.node: 8e9e05c52164694d elected leader 8e9e05c52164694d at term 2
+2021-01-29 14:33:45.651470 I | etcdserver: published {Name:default ClientURLs:[http://0.0.0.0:2379]} to cluster cdf818194e3a8c32
+2021-01-29 14:33:45.651590 I | embed: ready to serve client requests
+2021-01-29 14:33:45.651723 I | etcdserver: setting up the initial cluster version to 3.3
+2021-01-29 14:33:45.652950 N | embed: serving insecure client requests on [::]:2379, this is strongly discouraged!
+2021-01-29 14:33:45.665667 N | etcdserver/membership: set the initial cluster version to 3.3
+2021-01-29 14:33:45.665926 I | etcdserver/api: enabled capabilities for version 3.3
+2021-01-29 15:33:45.487419 N | compactor: Starting auto-compaction at revision 1 (retention: 1h0m0s)
+2021-01-29 15:33:45.532376 I | mvcc: store.index: compact 1
+2021-01-29 15:33:45.532593 N | compactor: Finished auto-compaction at revision 1
+2021-01-29 15:33:45.532740 I | mvcc: finished scheduled compaction at 1 (took 137.583µs)
+2021-01-29 16:33:45.707491 N | compactor: Starting auto-compaction at revision 87 (retention: 1h0m0s)
+2021-01-29 16:33:45.743992 I | mvcc: store.index: compact 87
+2021-01-29 16:33:45.744236 N | compactor: Finished auto-compaction at revision 87
+2021-01-29 16:33:45.744851 I | mvcc: finished scheduled compaction at 87 (took 141.485µs)
+2021-01-29 17:33:45.900485 N | compactor: Starting auto-compaction at revision 87 (retention: 1h0m0s)
+2021-01-29 17:33:45.913352 W | etcdserver: failed to apply request,took 14.609µs,request header:<ID:7587852119130909400 > compaction:<revision:87 > ,resp ,err is mvcc: required revision has been compacted
+2021-01-29 17:33:45.913440 N | compactor: Finished auto-compaction at revision 87
+2021-01-29 19:00:30.476822 N | compactor: Starting auto-compaction at revision 87 (retention: 1h0m0s)
+2021-01-29 19:00:30.497069 W | etcdserver: failed to apply request,took 499.344µs,request header:<ID:7587852119130915182 > compaction:<revision:87 > ,resp ,err is mvcc: required revision has been compacted
+2021-01-29 19:00:30.497387 N | compactor: Finished auto-compaction at revision 87
+2021-01-30 14:22:45.833651 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-01-30 14:22:45.902521 I | mvcc: store.index: compact 96
+2021-01-30 14:22:45.911161 I | mvcc: finished scheduled compaction at 96 (took 3.302995ms)
+2021-01-30 14:22:45.911496 N | compactor: Finished auto-compaction at revision 96
+2021-01-31 11:49:50.699537 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-01-31 11:49:50.702616 W | etcdserver: failed to apply request,took 25.715µs,request header:<ID:7587852119130915184 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-01-31 11:49:50.702693 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 10:33:49.667705 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 10:33:49.672934 W | etcdserver: failed to apply request,took 30.663µs,request header:<ID:7587852119130915185 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 10:33:49.673033 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 11:33:49.882355 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 11:33:49.887667 W | etcdserver: failed to apply request,took 48.802µs,request header:<ID:7587852119130915186 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 11:33:49.890219 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 12:33:50.065415 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 12:33:50.069229 W | etcdserver: failed to apply request,took 38.255µs,request header:<ID:7587852119130915187 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 12:33:50.070191 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 13:33:50.271888 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 13:33:50.275064 W | etcdserver: failed to apply request,took 30.22µs,request header:<ID:7587852119130915188 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 13:33:50.275248 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 14:58:19.253612 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 14:58:19.257066 W | etcdserver: failed to apply request,took 36.772µs,request header:<ID:7587852119130915189 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 14:58:19.257948 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 15:58:19.413778 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 15:58:19.417933 W | etcdserver: failed to apply request,took 31.78µs,request header:<ID:7587852119130915190 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 15:58:19.418016 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 16:58:19.617578 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 16:58:19.620506 W | etcdserver: failed to apply request,took 50.157µs,request header:<ID:7587852119130915191 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 16:58:19.621248 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 17:58:19.786043 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 17:58:19.789802 W | etcdserver: failed to apply request,took 48.098µs,request header:<ID:7587852119130915192 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 17:58:19.790670 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 18:58:19.992855 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 18:58:19.995731 W | etcdserver: failed to apply request,took 42.398µs,request header:<ID:7587852119130915193 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 18:58:20.007965 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 19:58:20.179343 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 19:58:20.183073 W | etcdserver: failed to apply request,took 35.065µs,request header:<ID:7587852119130915194 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 19:58:20.183410 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 20:58:20.379481 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 20:58:20.384836 W | etcdserver: failed to apply request,took 29.42µs,request header:<ID:7587852119130915195 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 20:58:20.384962 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 21:58:20.562233 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 21:58:20.565999 W | etcdserver: failed to apply request,took 41.042µs,request header:<ID:7587852119130915196 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 21:58:20.569619 N | compactor: Finished auto-compaction at revision 96
+2021-02-01 22:58:20.772036 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-01 22:58:20.778055 W | etcdserver: failed to apply request,took 89.378µs,request header:<ID:7587852119130915197 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-01 22:58:20.778464 N | compactor: Finished auto-compaction at revision 96
+2021-02-02 10:49:28.636124 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-02 10:49:28.639362 W | etcdserver: failed to apply request,took 53.197µs,request header:<ID:7587852119130915198 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-02 10:49:28.639996 N | compactor: Finished auto-compaction at revision 96
+2021-02-02 11:49:59.437463 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-02 11:49:59.441033 W | etcdserver: failed to apply request,took 87.285µs,request header:<ID:7587852119130915199 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-02 11:49:59.448643 N | compactor: Finished auto-compaction at revision 96
+2021-02-02 14:43:42.804644 W | etcdserver: request "header:<ID:7587852119130915203 > put:<key:\"/services/prometheus_metrics/192.168.39.11:57150\" value_size:53 lease:7587852119130915201 >" with result "size:4" took too long (127.2645ms) to execute
+2021-02-02 15:18:14.017631 N | compactor: Starting auto-compaction at revision 96 (retention: 1h0m0s)
+2021-02-02 15:18:14.020516 W | etcdserver: failed to apply request,took 29.505µs,request header:<ID:7587852119130917851 > compaction:<revision:96 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-02 15:18:14.020599 N | compactor: Finished auto-compaction at revision 96
+2021-02-02 16:22:23.196603 N | compactor: Starting auto-compaction at revision 114 (retention: 1h0m0s)
+2021-02-02 16:22:23.247982 I | mvcc: store.index: compact 114
+2021-02-02 16:22:23.252624 N | compactor: Finished auto-compaction at revision 114
+2021-02-02 16:22:23.252743 I | mvcc: finished scheduled compaction at 114 (took 111.27µs)
+2021-02-02 17:22:23.430909 N | compactor: Starting auto-compaction at revision 140 (retention: 1h0m0s)
+2021-02-02 17:22:23.492148 I | mvcc: store.index: compact 140
+2021-02-02 17:22:23.493176 N | compactor: Finished auto-compaction at revision 140
+2021-02-02 17:22:23.493510 I | mvcc: finished scheduled compaction at 140 (took 259.34µs)
+2021-02-02 18:22:23.672530 N | compactor: Starting auto-compaction at revision 140 (retention: 1h0m0s)
+2021-02-02 18:22:23.679082 W | etcdserver: failed to apply request,took 61.222µs,request header:<ID:7587852119130917889 > compaction:<revision:140 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-02 18:22:23.685192 N | compactor: Finished auto-compaction at revision 140
+2021-02-02 19:22:23.846360 N | compactor: Starting auto-compaction at revision 140 (retention: 1h0m0s)
+2021-02-02 19:22:23.850961 W | etcdserver: failed to apply request,took 76.048µs,request header:<ID:7587852119130917890 > compaction:<revision:140 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-02 19:22:23.852136 N | compactor: Finished auto-compaction at revision 140
+2021-02-02 20:22:24.022378 N | compactor: Starting auto-compaction at revision 140 (retention: 1h0m0s)
+2021-02-02 20:22:24.026707 W | etcdserver: failed to apply request,took 45.508µs,request header:<ID:7587852119130917891 > compaction:<revision:140 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-02 20:22:24.027440 N | compactor: Finished auto-compaction at revision 140
+2021-02-02 21:22:24.239393 N | compactor: Starting auto-compaction at revision 140 (retention: 1h0m0s)
+2021-02-02 21:22:24.243504 W | etcdserver: failed to apply request,took 15.815µs,request header:<ID:7587852119130917892 > compaction:<revision:140 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-02 21:22:24.243660 N | compactor: Finished auto-compaction at revision 140
+2021-02-03 10:32:03.857452 N | compactor: Starting auto-compaction at revision 140 (retention: 1h0m0s)
+2021-02-03 10:32:03.861071 W | etcdserver: failed to apply request,took 54.43µs,request header:<ID:7587852119130917893 > compaction:<revision:140 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-03 10:32:03.861791 N | compactor: Finished auto-compaction at revision 140
+2021-02-03 11:32:04.067396 N | compactor: Starting auto-compaction at revision 140 (retention: 1h0m0s)
+2021-02-03 11:32:04.074743 W | etcdserver: failed to apply request,took 53.795µs,request header:<ID:7587852119130917894 > compaction:<revision:140 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-03 11:32:04.074864 N | compactor: Finished auto-compaction at revision 140
+2021-02-03 12:32:04.242790 N | compactor: Starting auto-compaction at revision 140 (retention: 1h0m0s)
+2021-02-03 12:32:04.247258 W | etcdserver: failed to apply request,took 50.73µs,request header:<ID:7587852119130917895 > compaction:<revision:140 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-03 12:32:04.247819 N | compactor: Finished auto-compaction at revision 140
+2021-02-03 14:43:29.179049 N | compactor: Starting auto-compaction at revision 140 (retention: 1h0m0s)
+2021-02-03 14:43:29.187706 W | etcdserver: failed to apply request,took 38.238µs,request header:<ID:7587852119130917896 > compaction:<revision:140 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-03 14:43:29.187808 N | compactor: Finished auto-compaction at revision 140
+2021-02-03 15:43:29.426548 N | compactor: Starting auto-compaction at revision 140 (retention: 1h0m0s)
+2021-02-03 15:43:29.463279 W | etcdserver: failed to apply request,took 1.581635ms,request header:<ID:7587852119130917897 > compaction:<revision:140 > ,resp ,err is mvcc: required revision has been compacted
+2021-02-03 15:43:29.467132 N | compactor: Finished auto-compaction at revision 140
