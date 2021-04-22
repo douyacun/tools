@@ -19,8 +19,8 @@ services:
     networks:
       - es-net
     volumes:
-      - /Users/admin/Documents/tools/docker/elasticsearch/data:/usr/share/elasticsearch/data
-      - /Users/admin/Documents/tools/docker/elasticsearch/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - ~/Documents/github.com/tools/docker/elasticsearch/data:/usr/share/elasticsearch/data
+      - ~/Documents/github.com/tools/docker/elasticsearch/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
   kibana:
     image: docker.io/kibana:7.5.0
     container_name: kibana
